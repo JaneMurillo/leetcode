@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     vector<int> firstletter(26);
     string s;
-    char f;
+    char f = 0;
     cin >> s;
     //s = "atcoderregularcontest";
     //s = "abcdefghijklmnopqrstuvwxyz";
