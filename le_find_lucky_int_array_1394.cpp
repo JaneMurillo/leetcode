@@ -6,7 +6,7 @@ class Solution {
 public:
     int findLucky(vector<int>& arr) {
         vector<int> freq(501);
-        int max_lucky = 0;
+        int max_lucky = -1;
         
         for(int i = 0; i < arr.size(); i++){
             int in = arr[i];
@@ -15,15 +15,10 @@ public:
         // [ 0 0 2 1 1 ]
         // [ 0 1 2 3 4 ]
         
-        for(int i = 0; i < freq.size(); i++){
+        for(int i = 1; i < freq.size(); i++){
             if(freq[i] == i){
-                if(i > max_lucky){
                     max_lucky = i;
-                }
             }
-        }
-        if(max_lucky == 0){
-            return -1;
         }
         return max_lucky;
     }
