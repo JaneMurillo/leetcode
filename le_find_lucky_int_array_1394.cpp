@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     int findLucky(vector<int>& arr) {
-        vector<int> freq(500);
+        vector<int> freq(501);
         int max_lucky = 0;
         
         for(int i = 0; i < arr.size(); i++){
